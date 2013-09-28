@@ -12,9 +12,7 @@
   <dependencies>
 
     <!-- 
-
     Test Dependencies
-
     -->
     
     <dependency>
@@ -39,9 +37,7 @@
     </dependency>
 
     <!-- 
-
     Utility Dependencies (Logging, Dependency Injection, Precondistions, Caches, etc.)
-
     -->
 
     <dependency>
@@ -79,15 +75,12 @@
   <build>
 
     <!--
-
     Some plugins that are useful to a variety of projects.
-
     -->
 
     <plugins>
 
       <!-- 
-
       Runs a particular main method.
 
       See: http://mojo.codehaus.org/exec-maven-plugin/usage.html
@@ -96,7 +89,6 @@
       exec:exec - spawns a new process
 
       Run with arguments with: mvn exec:java -Dexec.args="foo bar baz"
-
       -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -108,7 +100,6 @@
       </plugin>
 
        <!-- 
-
        Creates Javadoc documentation 
 
        See: http://maven.apache.org/plugins/maven-javadoc-plugin/usage.html
@@ -118,7 +109,6 @@
 
        I tried putting this plugin in the reporting section but it did
        not automatically generate my JavaDoc site when I ran mvn site.
-
        -->
        <plugin>
          <groupId>org.apache.maven.plugins</groupId>
@@ -136,7 +126,6 @@
        </plugin>
 
       <!-- 
-
       Finds bugs in your source code
 
       findbugs:check
@@ -147,7 +136,6 @@
 
       Note: Java source code must be compiled.  I guess it does
       byte-code analysis as opposed to source code analysis.
-
       -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -156,13 +144,11 @@
       </plugin>
 
        <!--
-
        Code Coverage Tool
 
        cobertura:cobertura - generates report at target/site/cobertura/index.html
 
        See: http://mojo.codehaus.org/cobertura-maven-plugin/usage.html
-
        -->
        <plugin>
          <groupId>org.codehaus.mojo</groupId>
@@ -171,7 +157,6 @@
        </plugin>
 
        <!-- 
-
        Generates a dependency report
 
        mvn jdepend:generate - creates target/jdepend-report.xml
@@ -179,7 +164,6 @@
        mvn site:site - creates target/site/jdepend-report.html
 
        See: http://mojo.codehaus.org/jdepend-maven-plugin/usage.html
-
        -->
        <plugin>
          <groupId>org.codehaus.mojo</groupId>
@@ -188,13 +172,11 @@
        </plugin>
 
        <!--
-
        Scans source code for various tags
 
        taglist:taglist
 
        See: http://mojo.codehaus.org/taglist-maven-plugin/usage.html
-
        -->
        <plugin>
          <groupId>org.codehaus.mojo</groupId>
@@ -227,13 +209,11 @@
        </plugin>
 
        <!--
-
        Create eclipse project
 
        mvn eclipse:eclipse
 
        See: http://maven.apache.org/plugins/maven-eclipse-plugin/plugin-info.html
-
        -->
        <plugin>
          <groupId>org.apache.maven.plugins</groupId>
@@ -242,13 +222,11 @@
        </plugin>
 
        <!-- 
-
        Creates a jar file with the source code in it
 
        mvn source:jar
 
        See: http://maven.apache.org/plugins/maven-source-plugin/usage.html
-
        -->
        <plugin>
          <groupId>org.apache.maven.plugins</groupId>
