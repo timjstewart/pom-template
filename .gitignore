@@ -2,3 +2,7 @@
 .project
 target/
 *~
+*.class
+*.jar
+*.war
+*.ear
