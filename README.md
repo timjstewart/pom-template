@@ -71,8 +71,14 @@ See: http://mojo.codehaus.org/taglist-maven-plugin/usage.html
 
 See: http://maven.apache.org/plugins/maven-eclipse-plugin/plugin-info.html
 
-## source - Creates a jar file with the source code in it
+## source - Creates a sources jar file
 
       mvn source:jar
 
 See: http://maven.apache.org/plugins/maven-source-plugin/usage.html
+
+## checkstyle - Checks your code against a coding specification
+
+      mvn checkstyle:checkstyle
+
+See: http://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html

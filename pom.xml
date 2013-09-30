@@ -171,6 +171,23 @@
          <version>2.0-beta-2</version>
        </plugin>
 
+
+       <!-- 
+       Makes sure that your code conforms to standards you set.
+
+       mvn checkstyle:checkstyle
+
+       See: http://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html
+       -->
+       <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-checkstyle-plugin</artifactId>
+         <version>2.10</version>
+	 <configuration>
+           <consoleOutput>true</consoleOutput>
+	 </configuration>
+       </plugin>
+
        <!--
        Scans source code for various tags
 
